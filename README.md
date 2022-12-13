@@ -1,3 +1,8 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -8,68 +13,81 @@ developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repos
 Status](https://travis-ci.org/hrbrmstr/ggalt.svg?branch=master)](https://travis-ci.org/hrbrmstr/ggalt)
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/hrbrmstr/ggalt?branch=master&svg=true)](https://ci.appveyor.com/project/hrbrmstr/ggalt)
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ggalt)](https://CRAN.R-project.org/package=ggalt)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ggalt)](https://CRAN.R-project.org/package=ggalt)
 ![downloads](http://cranlogs.r-pkg.org/badges/grand-total/ggalt)
 
-`ggalt` : Extra Coordinate Systems, Geoms, Statistical Transformations,
-Scales & Fonts for ‘ggplot2’
+GitHub URL: <https://github.com/hrbrmstr/ggalt> The website is deployed
+here:
+<https://jhu-statprogramming-fall-2022.github.io/biostat840-project3-pkgdown-darrenlingit/>
 
-A compendium of ‘geoms’, ‘coords’, ‘stats’, scales and fonts for
-‘ggplot2’, including splines, 1d and 2d densities, univariate average
+This package came with a README.md file. Below is what was here before I
+edited it:
+
+Customized website changes: - I made the background color a foresty
+green. - I made the foreground color (the text) a very dark green. - I
+set the primary color (the translucent hover color on the sidebar) as a
+light green. - I made the base font Roboto. - I made the heading font
+Unbounded. - I made the code font Nunito Sans.
+
+`ggalt` : Extra Coordinate Systems, Geoms, Statistical Transformations,
+Scales & Fonts for 'ggplot2'
+
+A compendium of 'geoms', 'coords', 'stats', scales and fonts for
+'ggplot2', including splines, 1d and 2d densities, univariate average
 shifted histograms, a new map coordinate system based on the
-‘PROJ.4’-library and the ‘StateFace’ open source font ‘ProPublica’.
+'PROJ.4'-library and the 'StateFace' open source font 'ProPublica'.
 
 The following functions are implemented:
 
-  - `geom_ubar` : Uniform width bar charts
+-   `geom_ubar` : Uniform width bar charts
 
-  - `geom_horizon` : Horizon charts (modified from
+-   `geom_horizon` : Horizon charts (modified from
     <https://github.com/AtherEnergy/ggTimeSeries>)
 
-  - `coord_proj` : Like `coord_map`, only better (prbly shld use this
-    with `geom_cartogram` as `geom_map`’s new defaults are ugh)
+-   `coord_proj` : Like `coord_map`, only better (prbly shld use this
+    with `geom_cartogram` as `geom_map`'s new defaults are ugh)
 
-  - `geom_xspline` : Connect control points/observations with an
+-   `geom_xspline` : Connect control points/observations with an
     X-spline
 
-  - `stat_xspline` : Connect control points/observations with an
+-   `stat_xspline` : Connect control points/observations with an
     X-spline
 
-  - `geom_bkde` : Display a smooth density estimate (uses
+-   `geom_bkde` : Display a smooth density estimate (uses
     `KernSmooth::bkde`)
 
-  - `geom_stateface`: Use ProPublica’s StateFace font in ggplot2 plots
+-   `geom_stateface`: Use ProPublica's StateFace font in ggplot2 plots
 
-  - `geom_bkde2d` : Contours from a 2d density estimate. (uses
+-   `geom_bkde2d` : Contours from a 2d density estimate. (uses
     `KernSmooth::bkde2D`)
 
-  - `stat_bkde` : Display a smooth density estimate (uses
+-   `stat_bkde` : Display a smooth density estimate (uses
     `KernSmooth::bkde`)
 
-  - `stat_bkde2d` : Contours from a 2d density estimate. (uses
+-   `stat_bkde2d` : Contours from a 2d density estimate. (uses
     `KernSmooth::bkde2D`)
 
-  - `stat_ash` : Compute and display a univariate averaged shifted
+-   `stat_ash` : Compute and display a univariate averaged shifted
     histogram (polynomial kernel) (uses `ash::ash1`/`ash::bin1`)
 
-  - `geom_encircle`: Automatically enclose points in a polygon
+-   `geom_encircle`: Automatically enclose points in a polygon
 
-  - `byte_format`: + helpers. e.g. turn `10000` into `10 Kb`
+-   `byte_format`: + helpers. e.g. turn `10000` into `10 Kb`
 
-  - `geom_lollipop()`: Dead easy lollipops (horizontal or vertical)
+-   `geom_lollipop()`: Dead easy lollipops (horizontal or vertical)
 
-  - `geom_dumbbell()` : Dead easy dumbbell plots
+-   `geom_dumbbell()` : Dead easy dumbbell plots
 
-  - `stat_stepribbon()` : Step ribbons
+-   `stat_stepribbon()` : Step ribbons
 
-  - `annotation_ticks()` : Add minor ticks to identity, exp(1) and
+-   `annotation_ticks()` : Add minor ticks to identity, exp(1) and
     exp(10) axis scales independently of each other.
 
-  - `geom_spikelines()` : Instead of geom\_vline and geom\_hline a pair
-    of segments that originate from same c(x,y) are drawn to the
-    respective axes.
+-   `geom_spikelines()` : Instead of geom_vline and geom_hline a pair of
+    segments that originate from same c(x,y) are drawn to the respective
+    axes.
 
-  - plotly integration for a few of the ^^ geoms
+-   plotly integration for a few of the \^\^ geoms
 
 ### Installation
 
@@ -145,9 +163,9 @@ ggplot(sports, aes(time2, p_smooth)) +
   theme(axis.text.y=element_blank())
 ```
 
-<img src="README_figs/README-horizon-1.png" width="912" />
+<img src="README_figs/README-horizon-1.png" width="912"/>
 
-### Splines\!
+### Splines!
 
 ``` r
 ggplot(dat, aes(x, y, group=group, color=group)) +
@@ -155,7 +173,7 @@ ggplot(dat, aes(x, y, group=group, color=group)) +
   geom_line()
 ```
 
-<img src="README_figs/README-splines-1.png" width="672" />
+<img src="README_figs/README-splines-1.png" width="672"/>
 
 ``` r
 
@@ -166,7 +184,7 @@ ggplot(dat, aes(x, y, group=group, color=factor(group))) +
 ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 ```
 
-<img src="README_figs/README-splines-2.png" width="672" />
+<img src="README_figs/README-splines-2.png" width="672"/>
 
 ``` r
 
@@ -177,7 +195,7 @@ ggplot(dat, aes(x, y, group=group, color=factor(group))) +
 ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 ```
 
-<img src="README_figs/README-splines-3.png" width="672" />
+<img src="README_figs/README-splines-3.png" width="672"/>
 
 ``` r
 
@@ -188,7 +206,7 @@ ggplot(dat, aes(x, y, group=group, color=factor(group))) +
 ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 ```
 
-<img src="README_figs/README-splines-4.png" width="672" />
+<img src="README_figs/README-splines-4.png" width="672"/>
 
 ``` r
 
@@ -199,7 +217,7 @@ ggplot(dat, aes(x, y, group=group, color=factor(group))) +
 ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 ```
 
-<img src="README_figs/README-splines-5.png" width="672" />
+<img src="README_figs/README-splines-5.png" width="672"/>
 
 ``` r
 
@@ -210,7 +228,7 @@ ggplot(dat, aes(x, y, group=group, color=factor(group))) +
 ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 ```
 
-<img src="README_figs/README-splines-6.png" width="672" />
+<img src="README_figs/README-splines-6.png" width="672"/>
 
 ``` r
 
@@ -221,7 +239,7 @@ ggplot(dat, aes(x, y, group=group, color=factor(group))) +
 ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 ```
 
-<img src="README_figs/README-splines-7.png" width="672" />
+<img src="README_figs/README-splines-7.png" width="672"/>
 
 ``` r
 
@@ -232,7 +250,7 @@ ggplot(dat, aes(x, y, group=group, color=factor(group))) +
 ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 ```
 
-<img src="README_figs/README-splines-8.png" width="672" />
+<img src="README_figs/README-splines-8.png" width="672"/>
 
 #### Alternate (better) density plots
 
@@ -246,7 +264,7 @@ ggplot(geyser, aes(x=duration)) +
 ## Bandwidth not specified. Using '0.14', via KernSmooth::dpik.
 ```
 
-<img src="README_figs/README-bkde_ash-1.png" width="672" />
+<img src="README_figs/README-bkde_ash-1.png" width="672"/>
 
 ``` r
 
@@ -255,7 +273,7 @@ ggplot(geyser, aes(x=duration)) +
 ## Bandwidth not specified. Using '0.14', via KernSmooth::dpik.
 ```
 
-<img src="README_figs/README-bkde_ash-2.png" width="672" />
+<img src="README_figs/README-bkde_ash-2.png" width="672"/>
 
 ``` r
 
@@ -263,7 +281,7 @@ ggplot(geyser, aes(x=duration)) +
   stat_bkde(bandwidth=0.25)
 ```
 
-<img src="README_figs/README-bkde_ash-3.png" width="672" />
+<img src="README_figs/README-bkde_ash-3.png" width="672"/>
 
 ``` r
 
@@ -271,7 +289,7 @@ ggplot(geyser, aes(x=duration)) +
   geom_bkde(bandwidth=0.25)
 ```
 
-<img src="README_figs/README-bkde_ash-4.png" width="672" />
+<img src="README_figs/README-bkde_ash-4.png" width="672"/>
 
 ``` r
 
@@ -284,7 +302,7 @@ ggplot(dat, aes(x=rating, color=cond)) + geom_bkde(fill="#00000000")
 ## Bandwidth not specified. Using '0.31', via KernSmooth::dpik.
 ```
 
-<img src="README_figs/README-bkde_ash-5.png" width="672" />
+<img src="README_figs/README-bkde_ash-5.png" width="672"/>
 
 ``` r
 
@@ -293,7 +311,7 @@ ggplot(dat, aes(x=rating, fill=cond)) + geom_bkde(alpha=0.3)
 ## Bandwidth not specified. Using '0.31', via KernSmooth::dpik.
 ```
 
-<img src="README_figs/README-bkde_ash-6.png" width="672" />
+<img src="README_figs/README-bkde_ash-6.png" width="672"/>
 
 ``` r
 
@@ -309,7 +327,7 @@ grid.arrange(ggplot(dat, aes(x)) + stat_ash(),
 ## Bandwidth not specified. Using '0.43', via KernSmooth::dpik.
 ```
 
-<img src="README_figs/README-bkde_ash-7.png" width="672" />
+<img src="README_figs/README-bkde_ash-7.png" width="672"/>
 
 ``` r
 
@@ -328,7 +346,7 @@ ggplot(dat, aes(x)) +
 ## Bandwidth not specified. Using '0.43', via KernSmooth::dpik.
 ```
 
-<img src="README_figs/README-bkde_ash-8.png" width="672" />
+<img src="README_figs/README-bkde_ash-8.png" width="672"/>
 
 ### Alternate 2D density plots
 
@@ -341,16 +359,16 @@ m <- ggplot(faithful, aes(x = eruptions, y = waiting)) +
 m + geom_bkde2d(bandwidth=c(0.5, 4))
 ```
 
-<img src="README_figs/README-bkde2d-1.png" width="672" />
+<img src="README_figs/README-bkde2d-1.png" width="672"/>
 
 ``` r
 
 m + stat_bkde2d(bandwidth=c(0.5, 4), aes(fill = ..level..), geom = "polygon")
 ```
 
-<img src="README_figs/README-bkde2d-2.png" width="672" />
+<img src="README_figs/README-bkde2d-2.png" width="672"/>
 
-### `coord_proj` LIVES\! (still needs a teensy bit of work)
+### `coord_proj` LIVES! (still needs a teensy bit of work)
 
 ``` r
 world <- map_data("world")
@@ -368,7 +386,7 @@ gg <- gg + coord_proj("+proj=wintri")
 gg
 ```
 
-<img src="README_figs/README-coord_proj-1.png" width="672" />
+<img src="README_figs/README-coord_proj-1.png" width="672"/>
 
 ### ProPublica StateFace
 
@@ -390,7 +408,7 @@ gg <- gg + scale_size_identity()
 gg
 ```
 
-<img src="README_figs/README-stateface-1.png" width="672" />
+<img src="README_figs/README-stateface-1.png" width="672"/>
 
 ### Encircling points automagically
 
@@ -404,21 +422,21 @@ gg <- gg + scale_y_continuous(expand=c(0.5,1))
 gg + geom_encircle(s_shape=1, expand=0) + geom_point()
 ```
 
-<img src="README_figs/README-encircle-1.png" width="672" />
+<img src="README_figs/README-encircle-1.png" width="672"/>
 
 ``` r
 
 gg + geom_encircle(s_shape=1, expand=0.1, colour="red") + geom_point()
 ```
 
-<img src="README_figs/README-encircle-2.png" width="672" />
+<img src="README_figs/README-encircle-2.png" width="672"/>
 
 ``` r
 
 gg + geom_encircle(s_shape=0.5, expand=0.1, colour="purple") + geom_point()
 ```
 
-<img src="README_figs/README-encircle-3.png" width="672" />
+<img src="README_figs/README-encircle-3.png" width="672"/>
 
 ``` r
 
@@ -426,7 +444,7 @@ gg + geom_encircle(data=subset(d, x==1), colour="blue", spread=0.02) +
   geom_point()
 ```
 
-<img src="README_figs/README-encircle-4.png" width="672" />
+<img src="README_figs/README-encircle-4.png" width="672"/>
 
 ``` r
 
@@ -434,7 +452,7 @@ gg +geom_encircle(data=subset(d, x==2), colour="cyan", spread=0.04) +
   geom_point()
 ```
 
-<img src="README_figs/README-encircle-5.png" width="672" />
+<img src="README_figs/README-encircle-5.png" width="672"/>
 
 ``` r
 
@@ -442,7 +460,7 @@ gg <- ggplot(mpg, aes(displ, hwy))
 gg + geom_encircle(data=subset(mpg, hwy>40)) + geom_point()
 ```
 
-<img src="README_figs/README-encircle-6.png" width="672" />
+<img src="README_figs/README-encircle-6.png" width="672"/>
 
 ``` r
 
@@ -452,7 +470,7 @@ gg + geom_encircle(data=ss, colour="blue", s_shape=0.9, expand=0.07) +
   geom_point() + geom_point(data=ss, colour="blue")
 ```
 
-<img src="README_figs/README-encircle-7.png" width="672" />
+<img src="README_figs/README-encircle-7.png" width="672"/>
 
 ### Step ribbons
 
@@ -467,7 +485,7 @@ gg <- gg + geom_step(color="#2b2b2b")
 gg
 ```
 
-<img src="README_figs/README-stepribbon-1.png" width="672" />
+<img src="README_figs/README-stepribbon-1.png" width="672"/>
 
 ``` r
 
@@ -479,7 +497,7 @@ gg <- gg + geom_step(color="#2b2b2b")
 gg
 ```
 
-<img src="README_figs/README-stepribbon-2.png" width="672" />
+<img src="README_figs/README-stepribbon-2.png" width="672"/>
 
 ### Lollipop charts
 
@@ -539,7 +557,7 @@ gg <- gg + theme(plot.caption=element_text(size=8, margin=margin(t=10)))
 gg
 ```
 
-<img src="README_figs/README-lollipop-1.png" width="672" />
+<img src="README_figs/README-lollipop-1.png" width="672"/>
 
 ``` r
 library(dplyr)
@@ -581,7 +599,7 @@ gg <- gg + theme(panel.border=element_blank())
 gg
 ```
 
-<img src="README_figs/README-dumbbell-1.png" width="672" />
+<img src="README_figs/README-dumbbell-1.png" width="672"/>
 
 ``` r
 library(hrbrthemes)
@@ -597,7 +615,7 @@ ggplot(df, aes(y=trt, x=l, xend=r)) +
   theme(panel.grid.major.x=element_line(size=0.05))
 ```
 
-<img src="README_figs/README-dumbbell2-1.png" width="672" />
+<img src="README_figs/README-dumbbell2-1.png" width="672"/>
 
 ``` r
 p <- ggplot(msleep, aes(bodywt, brainwt)) + geom_point()
@@ -607,7 +625,7 @@ p + annotation_ticks(sides = 'l')
 ## Warning: Removed 27 rows containing missing values (geom_point).
 ```
 
-<img src="README_figs/README-annoticks-1.png" width="672" />
+<img src="README_figs/README-annoticks-1.png" width="672"/>
 
 ``` r
 
@@ -616,7 +634,7 @@ p + annotation_ticks(sides = 'lb')
 ## Warning: Removed 27 rows containing missing values (geom_point).
 ```
 
-<img src="README_figs/README-annoticks-2.png" width="672" />
+<img src="README_figs/README-annoticks-2.png" width="672"/>
 
 ``` r
 
@@ -628,7 +646,7 @@ p1 + annotation_ticks(sides = 'lb', scale = c('identity','log10'))
 ## Warning: Removed 27 rows containing missing values (geom_point).
 ```
 
-<img src="README_figs/README-annoticks-3.png" width="672" />
+<img src="README_figs/README-annoticks-3.png" width="672"/>
 
 ``` r
 
@@ -641,7 +659,7 @@ p +
   ggrepel::geom_label_repel(data = mtcars[mtcars$carb==4,],aes(label = name))
 ```
 
-<img src="README_figs/README-spikelines-1.png" width="672" />
+<img src="README_figs/README-spikelines-1.png" width="672"/>
 
 ### Code of Conduct
 
