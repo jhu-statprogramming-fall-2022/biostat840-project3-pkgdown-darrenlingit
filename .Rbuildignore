@@ -6,3 +6,6 @@
 ^cran-comments\.md$
 ^revdep$
 ^appveyor\.yml$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

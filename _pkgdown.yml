@@ -1,0 +1,13 @@
+url: ~
+template:
+  bootstrap: 5
+  bslib:
+    bg: '#8aa17d'
+    fg: '#101a0a'
+    primary: '#94e39a'
+    base_font:
+      google: Roboto
+    heading_font:
+      google: Unbounded
+    code_font:
+      google: Nunito Sans
