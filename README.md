@@ -20,14 +20,15 @@ GitHub URL: <https://github.com/hrbrmstr/ggalt> The website is deployed
 here:
 <https://jhu-statprogramming-fall-2022.github.io/biostat840-project3-pkgdown-darrenlingit/>
 
-This package came with a README.md file. Below is what was here before I
-edited it:
+This package came with a README.md file. 
 
-Customized website changes: - I made the background color a foresty
-green. - I made the foreground color (the text) a very dark green. - I
-set the primary color (the translucent hover color on the sidebar) as a
-light green. - I made the base font Roboto. - I made the heading font
-Unbounded. - I made the code font Nunito Sans.
+Customized website changes:
+- I made the background color a foresty green. - I made the foreground color (the text) a very dark green.
+- I set the primary color (the translucent hover color on the sidebar) as a light green.
+- I made the base font Roboto. - I made the heading font Unbounded.
+- I made the code font Nunito Sans.
+
+Below is what was here before I edited it:
 
 `ggalt` : Extra Coordinate Systems, Geoms, Statistical Transformations,
 Scales & Fonts for 'ggplot2'
