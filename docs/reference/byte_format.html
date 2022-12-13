@@ -114,20 +114,20 @@ symbol(s) (e.g. "<code>Kb</code>") desired and the measurement <code>units</code
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">byte_format</span><span class="op">(</span><span class="op">)</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">3000000000</span>, <span class="fl">10</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "2.20 Gb" "2.70 Gb" "1.30 Gb" "1.40 Gb" "1.90 Gb" "0.30 Gb" "1.00 Gb"</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [8] "1.00 Gb" "2.30 Gb" "0.30 Gb"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "1.2 Gb" "1.4 Gb" "2.6 Gb" "2.7 Gb" "2.4 Gb" "0.3 Gb" "1.0 Gb" "2.2 Gb"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [9] "0.2 Gb" "0.2 Gb"</span>
 <span class="r-in"><span><span class="fu">bytes</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">3000000000</span>, <span class="fl">10</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "813.2 Mb" "1.3 Gb"   "237.5 Mb" "2.5 Gb"   "2.6 Gb"   "1.5 Gb"  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [7] "1.8 Gb"   "578.0 Mb" "836.7 Mb" "905.9 Mb"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "1.9 Mb"   "689.4 Mb" "2.0 Gb"   "60.7 Mb"  "2.3 Gb"   "2.5 Gb"  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [7] "862.6 Mb" "795.8 Mb" "1.7 Gb"   "1.3 Gb"  </span>
 <span class="r-in"><span><span class="fu">Kb</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">3000000000</span>, <span class="fl">10</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "292,721 Kb"   "2,053,616 Kb" "2,673,537 Kb" "654,630 Kb"   "2,042,004 Kb"</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [6] "586,712 Kb"   "1,791,997 Kb" "2,585,409 Kb" "8,284 Kb"     "1,655,142 Kb"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "125,601 Kb"   "1,304,692 Kb" "1,926,484 Kb" "2,576,213 Kb" "2,792,289 Kb"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [6] "2,462,894 Kb" "1,022,797 Kb" "212,913 Kb"   "72,914 Kb"    "642,601 Kb"  </span>
 <span class="r-in"><span><span class="fu">Mb</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">3000000000</span>, <span class="fl">10</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "478 Mb"   "895 Mb"   "2,629 Mb" "1,877 Mb" "2,684 Mb" "374 Mb"  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [7] "40 Mb"    "1,602 Mb" "835 Mb"   "2,272 Mb"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "1,881 Mb" "14 Mb"    "2,258 Mb" "330 Mb"   "824 Mb"   "2,802 Mb"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [7] "1,904 Mb" "2,133 Mb" "285 Mb"   "154 Mb"  </span>
 <span class="r-in"><span><span class="fu">Gb</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">3000000000</span>, <span class="fl">10</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "2.50 Gb" "2.50 Gb" "1.30 Gb" "2.80 Gb" "1.50 Gb" "0.50 Gb" "0.80 Gb"</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [8] "0.40 Gb" "1.40 Gb" "1.60 Gb"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "2.00 Gb" "0.40 Gb" "0.60 Gb" "0.40 Gb" "2.30 Gb" "1.00 Gb" "0.10 Gb"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [8] "0.40 Gb" "1.30 Gb" "1.40 Gb"</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

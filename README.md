@@ -16,8 +16,9 @@ Status](https://ci.appveyor.com/api/projects/status/github/hrbrmstr/ggalt?branch
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ggalt)](https://CRAN.R-project.org/package=ggalt)
 ![downloads](http://cranlogs.r-pkg.org/badges/grand-total/ggalt)
 
-GitHub URL: <https://github.com/hrbrmstr/ggalt> The website is deployed
-here:
+GitHub URL: <https://github.com/hrbrmstr/ggalt>
+
+The website is deployed here:
 <https://jhu-statprogramming-fall-2022.github.io/biostat840-project3-pkgdown-darrenlingit/>
 
 This package came with a README.md file. 
