@@ -26,7 +26,8 @@ Description: A compendium of new geometries, coordinate systems, statistical
     points and coordinate-system-based text annotations.
 License: MIT + file LICENSE
 LazyData: true
-URL: https://github.com/hrbrmstr/ggalt
+URL: https://github.com/hrbrmstr/ggalt,
+    https://jhu-statprogramming-fall-2022.github.io/biostat840-project3-pkgdown-darrenlingit/
 BugReports: https://github.com/hrbrmstr/ggalt/issues
 Encoding: UTF-8
 Depends:

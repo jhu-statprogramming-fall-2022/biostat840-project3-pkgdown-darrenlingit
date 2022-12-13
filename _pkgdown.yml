@@ -1,4 +1,4 @@
-url: ~
+url: https://jhu-statprogramming-fall-2022.github.io/biostat840-project3-pkgdown-darrenlingit/
 template:
   bootstrap: 5
   bslib:
@@ -11,3 +11,4 @@ template:
       google: Unbounded
     code_font:
       google: Nunito Sans
+
